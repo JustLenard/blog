@@ -13,7 +13,7 @@ const ImageDisplay = () => {
 	const { imageSrc, error, loading } = useImage(imageName)
 
 	if (loading) return <div>Loading</div>
-	if (error) return <div>Error</div>
+	if (error || !imageSrc) return <div>Error</div>
 
 	return (
 		<Box
@@ -26,7 +26,7 @@ const ImageDisplay = () => {
 				overflow: 'hidden',
 			}}
 		>
-			<img src={lily} className="responsive-image" />
+			<img src={imageSrc} className="responsive-image" />
 		</Box>
 	)
 }

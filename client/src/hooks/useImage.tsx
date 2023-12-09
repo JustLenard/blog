@@ -13,10 +13,13 @@ const useImage = (imageName: string) => {
 		const fetchImage = async () => {
 			try {
 				setLoading(true)
-				const response = await fetch(`${api}/${imageName}`)
-				const data: string = await response.json()
+				const response = await fetch(`${api}/image/${imageName}`)
+				console.log('This is response', response)
+				const data: string = await response.text()
 
 				setLoading(false)
+
+				console.log('This is data', data)
 				setImageSrc(data)
 			} catch (err) {
 				console.log('This is err', err)
