@@ -1,0 +1,19 @@
+/* ImageDisplay.css */
+.image-container {
+	width: 100vw; /* 100% of the viewport width */
+	height: 100vh; /* 100% of the viewport height */
+	/* overflow: hidden; Hide any overflow */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.responsive-image {
+	max-width: 100%;
+	/* width: auto; */
+	width: fit-content;
+	border: 2px solid red;
+
+	/* max-height: 100%; */
+	/* height: auto; */
+}
