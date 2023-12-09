@@ -6,3 +6,6 @@ client/node_modules/
 server/build/
 client/build/
 
+
+server/.env
+client/.env
