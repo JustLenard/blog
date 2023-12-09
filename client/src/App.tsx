@@ -1,4 +1,3 @@
-import ImageDisplay from './components/ImageDisplay'
 import Root from './router/Root'
 
 interface Props {}

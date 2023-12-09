@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import { createBrowserRouter, RouterProvider, redirect } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import LoadingPage from './LoadingPage'
 
 /**

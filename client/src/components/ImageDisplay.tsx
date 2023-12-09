@@ -1,8 +1,7 @@
 import { Box } from '@mui/joy'
-import lily from '../assets/lilith_clothed_tattoo.png'
-import './ImageDisplay.css'
+import { useParams } from 'react-router'
 import useImage from '../hooks/useImage'
-import { useLocation, useParams } from 'react-router'
+import './ImageDisplay.css'
 // import cat from '..cat.jpeg/assets/'
 
 const ImageDisplay = () => {
